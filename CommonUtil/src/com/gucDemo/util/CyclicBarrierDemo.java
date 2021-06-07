@@ -1,4 +1,4 @@
-package com.common.util;
+package com.gucDemo.util;
 
 import javax.sound.midi.Soundbank;
 import java.util.concurrent.BrokenBarrierException;

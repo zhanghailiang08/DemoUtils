@@ -1,4 +1,4 @@
-package com.test.fanshe;
+package com.fansheDemo.util;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -13,7 +13,7 @@ public class ReflectTest {
 
         //通过类加载器获取car对象
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        Class classs = classLoader.loadClass("com.test.fanshe.Car");
+        Class classs = classLoader.loadClass("com.fansheDemo.util.Car");
 
         //获取类的默认构造器对象并通过他实例化car
         Constructor constructor = classs.getDeclaredConstructor((Class[]) null);

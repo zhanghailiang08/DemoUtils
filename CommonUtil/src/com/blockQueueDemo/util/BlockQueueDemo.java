@@ -1,4 +1,4 @@
-package com.blockQueue;
+package com.blockQueueDemo.util;
 
 public class BlockQueueDemo {
 

@@ -1,4 +1,4 @@
-package com.test.fanshe;
+package com.fansheDemo.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

@@ -1,4 +1,4 @@
-package com.common.util;
+package com.enumdemo.util;
 
 public enum CountryEnum {
 

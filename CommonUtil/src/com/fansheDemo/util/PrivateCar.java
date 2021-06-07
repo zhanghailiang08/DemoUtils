@@ -1,4 +1,4 @@
-package com.test.fanshe;
+package com.fansheDemo.util;
 
 public class PrivateCar {
 
