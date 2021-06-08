@@ -1,4 +1,4 @@
-package main.java.com.jian8.juc.lock;
+package com.jian8.juc.lock;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,6 +24,8 @@ public class ReadWriteLockDemo {
                 myCache.put(tempInt + "", tempInt + "");
             }, "Thread " + i).start();
         }
+
+
         for (int i = 1; i <= 5; i++) {
             final int tempInt = i;
             new Thread(() -> {
@@ -34,6 +36,14 @@ public class ReadWriteLockDemo {
             final int tempInt = i;
             new Thread(() -> {
                 myCache.put(tempInt + "", tempInt * 2);
+            }, "Thread====" + i).start();
+        }
+
+
+        for (int i = 1; i <= 5; i++) {
+            final int tempInt = i;
+            new Thread(() -> {
+                myCache.get(tempInt+"");
             }, "Thread====" + i).start();
         }
     }
@@ -79,6 +89,7 @@ class MyCache {
         }
 
     }
+
 
     public void clear() {
         map.clear();

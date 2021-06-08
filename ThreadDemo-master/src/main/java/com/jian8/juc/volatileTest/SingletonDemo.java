@@ -26,7 +26,7 @@ public class SingletonDemo {
 //        System.out.println(getInstance() == getInstance());
 
         //构造方法会在一些情况下执行多次
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             new Thread(() -> {
                 SingletonDemo.getInstance();
             }, "Thread " + i).start();

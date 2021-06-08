@@ -1,4 +1,4 @@
-package main.java.com.jian8.juc.lock;
+package com.jian8.juc.lock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

@@ -10,9 +10,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ContainerNotSafeDemo {
     public static void main(String[] args) {
 //        notSafe();
-//        vectorTest();
+        vectorTest();
 //        collectionsTest();
-        copyOnWriteArrayListTest();
+//        copyOnWriteArrayListTest();
     }
 
     /**

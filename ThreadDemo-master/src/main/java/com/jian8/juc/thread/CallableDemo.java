@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class CallableDemo {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         //FutureTask(Callable<V> callable)
-        FutureTask<Integer> futureTask = new FutureTask<Integer>(new MyThread2());
+        FutureTask<Integer> futureTask = new FutureTask(new MyThread2());
 
         new Thread(futureTask, "AAA").start();
 //        new Thread(futureTask, "BBB").start();//复用，直接取值，不要重启两个线程

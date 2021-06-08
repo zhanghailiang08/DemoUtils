@@ -1,4 +1,4 @@
-package main.java.com.jian8.juc.volatileTest;
+package com.jian8.juc.volatileTest;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
