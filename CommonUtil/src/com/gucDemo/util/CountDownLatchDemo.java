@@ -17,6 +17,6 @@ public class CountDownLatchDemo {
             }, CountryEnum.forEach_Country(i).getRetMessage()).start();
         }
         countDownLatch.await(1, TimeUnit.SECONDS);
-        System.out.println(Thread.currentThread().getName()+" 中国统一全球");
+        System.out.println(Thread.currentThread().getName()+" 统一全球");
     }
 }
