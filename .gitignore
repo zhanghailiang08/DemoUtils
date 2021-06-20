@@ -7,7 +7,7 @@
 /nbproject
 /*.ipr
 /*.iws
-/*.iml
+*.iml
 
 /target
 /.idea
