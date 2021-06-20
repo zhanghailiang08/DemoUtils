@@ -23,10 +23,20 @@ public class WeatherData implements Subject {
 			observers.remove(i);
 		}
 	}
-	
+
+	@Override
+	public void registerObserver(designpatterns.observer.weather.Observer o) {
+
+	}
+
+	@Override
+	public void removeObserver(designpatterns.observer.weather.Observer o) {
+
+	}
+
 	public void notifyObservers() {
 		for (Observer observer : observers) {
-			observer.update(temperature, humidity, pressure);
+			//observer.update(temperature, humidity, pressure);
 		}
 	}
 	

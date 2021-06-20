@@ -1,4 +1,4 @@
-package com.AQS.demo;
+package com.AQS.test;
 
 import java.util.concurrent.locks.ReentrantLock;
 

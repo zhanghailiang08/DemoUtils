@@ -1,4 +1,4 @@
-package com.AQS.demo;
+package com.AQS.test;
 
 
 /**
@@ -26,7 +26,6 @@ package com.AQS.demo;
  * 当N子线程全部执行完毕，state = 0,hui unpark() 主调动线程，主调用线程就会从await()函数返回，继续之后的动作。
  */
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
-
 
 
 public class Sync extends AbstractQueuedSynchronizer {

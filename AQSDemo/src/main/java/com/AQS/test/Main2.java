@@ -1,4 +1,6 @@
-package com.AQS.demo;
+package com.AQS.test;
+
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Main2 {
 
@@ -35,7 +37,9 @@ public class Main2 {
                 }
             });
         }
-        for (Thread t: threads) {
+
+        ReentrantLock reentrantLock = new ReentrantLock(true);
+    for (Thread t: threads) {
             t.start();
         }
         // 等待所有线程结束
